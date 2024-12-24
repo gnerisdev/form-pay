@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários Validados</title>
+  
+  <link rel="stylesheet" href="/assets/styles/base.css">
+  <link rel="stylesheet" href="/assets/styles/illustration-card.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper-logo">
+        <img src="/assets/images/logo1.png" alt="Logo ativo 3"> <br>
+        <img src="/assets/images/compra-segura.png" alt="Compra segura"> <br>
+      </div>
+
+      <h1 class="header__title">Finalize suas Compras com Segurança!</h1>
+      <p class="header__text">
+        Compre com <b>Segurança</b> - Seus Dados <b>Criptografados</b> de Ponta a Ponta.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <form class="form" id="form">
+      <!-- Dados Pessoais -->
+      <section class="form__section" id="dados-pessoais">
+        <h2 class="form__title">Dados Pessoais</h2>
+        <fieldset class="form__fieldset">
+          <label class="form__label" for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autofocus>
+          <div id="nome-error" class="error-message"></div>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <label class="form__label" for="sobrenome">Sobrenome:</label>
+          <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome">
+          <div id="sobrenome-error" class="error-message"></div>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <label class="form__label" for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu email">
+          <div id="email-error" class="error-message"></div>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <label class="form__label" for="telefone">Telefone:</label>
+          <input type="text" id="telefone" name="telefone" placeholder="XXXXXXXXXXX" maxlength="15">
+          <div id="telefone-error" class="error-message"></div>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <label class="form__label" for="cpf-cnpj">CPF/CNPJ:</label>
+          <input type="text" id="cpf-cnpj" name="cpf-cnpj" placeholder="CPF ou CNPJ">
+          <div id="cpf-cnpj-error" class="error-message"></div>
+        </fieldset>
+      </section>
+
+      <!-- Dados de Entrega -->
+      <section class="form__section" id="dados-entrega">
+        <h2 class="form__title">Dados de Entrega</h2>
+        <fieldset class="form__fieldset">
+          <label class="form__label" for="endereco">Endereço:</label>
+          <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço">
+          <div id="endereco-error" class="error-message"></div>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <label class="form__label" for="numero">Número:</label>
+          <input type="text" id="numero" name="numero" placeholder="Número da residência">
+          <div id="numero-error" class="error-message"></div>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <label class="form__label" for="complemento">Complemento:</label>
+          <input type="text" id="complemento" name="complemento" placeholder="Apartamento, bloco, etc.">
+          <div id="complemento-error" class="error-message"></div>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <label class="form__label" for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade">
+          <div id="cidade-error" class="error-message"></div>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <label class="form__label" for="estado">Estado:</label>
+          <input type="text" id="estado" name="estado" placeholder="Digite seu estado">
+          <div id="estado-error" class="error-message"></div>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <label class="form__label" for="cep">CEP:</label>
+          <input type="text" id="cep" name="cep" placeholder="XXXXXXXX" maxlength="9">
+          <div id="cep-error" class="error-message"></div>
+        </fieldset>
+      </section>
+
+      <section class="form__section form__section--illustration" id="ilustracao-cartao">
+        <div class="checkout">
+          <div class="credit-card-box">
+            <div class="flip">
+              <div class="front">
+                <div class="chip"></div>
+                <div class="logo">
+                  <svg version="1.1" id="visa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                       width="47.834px" height="47.834px" viewBox="0 0 47.834 47.834" style="enable-background:new 0 0 47.834 47.834;">
+                    <g>
+                      <g>
+                        <path d="M44.688,16.814h-3.004c-0.933,0-1.627,0.254-2.037,1.184l-5.773,13.074h4.083c0,0,0.666-1.758,0.817-2.143
+                          c0.447,0,4.414,0.006,4.979,0.006c0.116,0.498,0.474,2.137,0.474,2.137h3.607L44.688,16.814z M39.893,26.01
+                          c0.32-0.819,1.549-3.987,1.549-3.987c-0.021,0.039,0.317-0.825,0.518-1.362l0.262,1.23c0,0,0.745,3.406,0.901,4.119H39.893z
+                          M34.146,26.404c-0.028,2.963-2.684,4.875-6.771,4.875c-1.743-0.018-3.422-0.361-4.332-0.76l0.547-3.193l0.501,0.228
+                          c1.277,0.532,2.104,0.747,3.661,0.747c1.117,0,2.313-0.438,2.325-1.393c0.007-0.625-0.501-1.07-2.016-1.77
+                          c-1.476-0.683-3.43-1.827-3.405-3.876c0.021-2.773,2.729-4.708,6.571-4.708c1.506,0,2.713,0.31,3.483,0.599l-0.526,3.092
+                          l-0.351-0.165c-0.716-0.288-1.638-0.566-2.91-0.546c-1.522,0-2.228,0.634-2.228,1.227c-0.008,0.668,0.824,1.108,2.184,1.77
+                          C33.126,23.546,34.163,24.783,34.146,26.404z M0,16.962l0.05-0.286h6.028c0.813,0.031,1.468,0.29,1.694,1.159l1.311,6.304
+                          C7.795,20.842,4.691,18.099,0,16.962z M17.581,16.812l-6.123,14.239l-4.114,0.007L3.862,19.161
+                          c2.503,1.602,4.635,4.144,5.386,5.914l0.406,1.469l3.808-9.729L17.581,16.812L17.581,16.812z M19.153,16.8h3.89L20.61,31.066
+                          h-3.888L19.153,16.8z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="number"></div>
+                <div class="card-holder">
+                  <label>Card holder</label>
+                  <div></div>
+                </div>
+                <div class="card-expiration-date">
+                  <label>Expires</label>
+                  <div></div>
+                </div>
+              </div>
+              <div class="back">
+                <div class="strip"></div>
+                <div class="logo">
+                  <svg version="1.1" id="visa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                       width="47.834px" height="47.834px" viewBox="0 0 47.834 47.834" style="enable-background:new 0 0 47.834 47.834;">
+                    <g>
+                      <g>
+                        <path d="M44.688,16.814h-3.004c-0.933,0-1.627,0.254-2.037,1.184l-5.773,13.074h4.083c0,0,0.666-1.758,0.817-2.143
+                          c0.447,0,4.414,0.006,4.979,0.006c0.116,0.498,0.474,2.137,0.474,2.137h3.607L44.688,16.814z M39.893,26.01
+                          c0.32-0.819,1.549-3.987,1.549-3.987c-0.021,0.039,0.317-0.825,0.518-1.362l0.262,1.23c0,0,0.745,3.406,0.901,4.119H39.893z
+                          M34.146,26.404c-0.028,2.963-2.684,4.875-6.771,4.875c-1.743-0.018-3.422-0.361-4.332-0.76l0.547-3.193l0.501,0.228
+                          c1.277,0.532,2.104,0.747,3.661,0.747c1.117,0,2.313-0.438,2.325-1.393c0.007-0.625-0.501-1.07-2.016-1.77
+                          c-1.476-0.683-3.43-1.827-3.405-3.876c0.021-2.773,2.729-4.708,6.571-4.708c1.506,0,2.713,0.31,3.483,0.599l-0.526,3.092
+                          l-0.351-0.165c-0.716-0.288-1.638-0.566-2.91-0.546c-1.522,0-2.228,0.634-2.228,1.227c-0.008,0.668,0.824,1.108,2.184,1.77
+                          C33.126,23.546,34.163,24.783,34.146,26.404z M0,16.962l0.05-0.286h6.028c0.813,0.031,1.468,0.29,1.694,1.159l1.311,6.304
+                          C7.795,20.842,4.691,18.099,0,16.962z M17.581,16.812l-6.123,14.239l-4.114,0.007L3.862,19.161
+                          c2.503,1.602,4.635,4.144,5.386,5.914l0.406,1.469l3.808-9.729L17.581,16.812L17.581,16.812z M19.153,16.8h3.89L20.61,31.066
+                          h-3.888L19.153,16.8z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+        
+                </div>
+                <div class="ccv">
+                  <label>CCV</label>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- Dados cartão -->
+      <section class="form__section" id="dados-cartao">
+        <h2 class="form__title">Finalizar Compra</h2>
+        <fieldset class="form__fieldset">
+          <label class="form__label" for="total">Valor Total (R$):</label>
+          <input type="text" id="total" name="total" value="500,00" readonly>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <label class="form__label" for="parcelamento">Parcelamento:</label>
+          <select id="parcelamento" name="parcelamento">
+            <option value="1x">1x de R$ 500,00 (sem juros)</option>
+            <option value="2x">2x de R$ 250,00 (sem juros)</option>
+            <option value="3x">3x de R$ 166,67 (sem juros)</option>
+            <option value="6x">6x de R$ 83,33 (com juros de 1.5% ao mês)</option>
+            <option value="12x">12x de R$ 45,83 (com juros de 2% ao mês)</option>
+          </select>
+        </fieldset>
+
+        <fieldset class="form__fieldset form__fieldset--cart-number">
+          <label class="form__label" for="cartao-numero">Número do Cartão</label>
+          <div>
+            <input type="number" id="cartao-numero" class="input-cartao-number" maxlength="4" />
+            <input type="number" id="cartao-numero-1" class="input-cartao-number" maxlength="4" />
+            <input type="number" id="cartao-numero-2" class="input-cartao-number" maxlength="4" />
+            <input type="number" id="cartao-numero-3" class="input-cartao-number" maxlength="4" />
+          </div>
+          <div id="cartao-number-error" class="error-message" style="white-space: nowrap;"></div>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <label class="form__label" for="titular">Nome do Titular</label>
+          <input type="text" id="titular" />
+          <div id="titular-error" class="error-message"></div>
+        </fieldset>
+
+        <div style="display: grid; grid-template-columns: 38% 38% 24%; gap: 4px">
+          <fieldset class="form__fieldset">
+            <label class="form__label" for="mes">Mês Validade</label>
+            <select id="mes" name="mes">
+              <option></option>
+              <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+              <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select>
+            <div id="mes-error" class="error-message"></div>
+          </fieldset>
+
+          <fieldset class="form__fieldset" class="select">
+            <label class="form__label" for="ano">Ano Validade</label>
+            <select id="ano" name="ano">
+              <option></option>
+            </select>
+            <div id="ano-error" class="error-message"></div>
+          </fieldset>
+
+          <fieldset class="form__fieldset" class="fieldset-ccv">
+            <label class="form__label" for="ccv">CCV</label>
+            <input type="text" id="ccv" maxlength="3" />
+            <div id="ccv-error" class="error-message"></div>
+          </fieldset>
+        </div>
+      </section>
+    
+      <button class="form_button" type="submit">Finalizar Compra</button>
+      
+      <img class="form_img" src="/assets/images/compra-segura.png" alt="Compra segura">     
+      
+      <p class="form_text">Ambiente criptografado e 100% seguro.</p>
+    </form>
+  </main>
+
+  <script src="/assets/scripts/base.js"></script>
+  <script src="/assets/scripts/illustration-card.js"></script>
+</body>
+</html>
